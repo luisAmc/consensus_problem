@@ -1,0 +1,4 @@
+JW,A,B,C,D,E
+JX,B,A,C,D,E
+JY,C,A,D,E,B
+JZ,A,C,B,E,D

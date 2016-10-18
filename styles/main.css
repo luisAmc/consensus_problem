@@ -1,0 +1,345 @@
+body {
+    width: 100%;
+    font-family: "RobotoDraft", "Roboto", sans-serif;
+
+    -webkit-font-smoothing: antialiased;
+    background: #fafafa;
+    color: #212121;
+    font-size: 1em;
+}
+
+header {
+    background: #00796B;
+    border: 1px solid #ecf0f1;
+    margin: 0 auto;
+    color: #fff;
+}
+
+header > h2 {
+    padding-left: 2em;
+    text-align: left;
+    font-size: 2.2em;
+    font-weight: 400;
+}
+
+.input-configuration {
+    padding: 2em 4em 3em 4em;
+}
+
+.input-file-container{
+    float: left;
+}
+
+.method-configuration-container {
+    float: left;
+}
+
+.input-file-container {
+    float: left;
+    padding-right: 1em;
+}
+
+.input-file {
+    width: 0.1em;
+    height: 0.1em;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.input-file + label {
+    vertical-align: top;
+    font-size: 1em;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #fafafa;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: 0.08em solid #00796B;
+    text-decoration: none;
+    transition: all .6s;
+    min-width: 100px;
+}
+
+.input-file + label:hover {
+    background: #00796B;
+    color: #fafafa;
+}
+
+.input-file-container > span {
+    vertical-align: top;
+    font-size: 0.8em;
+    text-align: center;
+    display: inline-block;
+    padding: 0.8em 1em 1em 1em;
+}
+
+.clusters-quantity {
+    font-size: 1em;
+    float: left;
+    vertical-align: top;
+    padding: 0.5em 0.3em 0.5em 0em;
+}
+
+.iterations-quantity {
+    font-size: 1em;
+    float: left;
+    vertical-align: top;
+    padding: 0.5em 0.3em 0.5em 0.3em;
+}
+
+.method-selector {
+    font-size: 1em;
+    float: left;
+    vertical-align: top;
+    padding: 0.5em 0.3em 0.5em 0em;
+}
+
+.shuffle-participants {
+    font-size: 1em;
+    float: left;
+    vertical-align: top;
+    padding: 0.5em 0em 0.5em 1em;
+}
+
+.main-content {
+    padding: 2em 4em 2em 4em;
+}
+
+.file-data > table {
+    margin: 0em 1em 1em 0em;
+    display: inline-table;
+    border-collapse: collapse;
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+
+}
+
+.file-data > table caption {
+    background: #00796B;
+    border: 1px solid #00796B;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.file-data > table thead {
+    background: #00796B;
+    border: 1px solid #00796B;
+}
+
+.file-data > table th {
+    font-weight: normal;
+    font-size: 1em;
+    color: #fff;
+}
+
+.file-data > table th, td {
+    padding: 0.5em 0.8em 0.5em 0.95em;
+    border: 1px solid #00796B;
+}
+
+.kmeans-results {
+    padding-top: 2em;
+}
+
+.kmeans-results > span {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 40px;
+    margin-bottom: 8px;
+
+    color: #00796B;
+}
+
+.kmeans-results > table {
+    margin: 0em 1em 1em 0em;
+    display: inline-table;
+    border-collapse: collapse;
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+
+}
+
+.kmeans-results > table caption {
+    background: #00796B;
+    border: 1px solid #00796B;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.kmeans-results > table thead {
+    background: #00796B;
+    border: 1px solid #00796B;
+}
+
+.kmeans-results > table th {
+    font-weight: normal;
+    font-size: 1em;
+    color: #fff;
+}
+
+.kmeans-results > table th, td {
+    padding: 0.5em 0.8em 0.5em 0.95em;
+    border: 1px solid #00796B;
+    text-align: center;
+}
+
+.participants-data {
+    padding-top: 0.2em;
+}
+
+.participants-data > span {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 40px;
+    margin-bottom: 8px;
+
+    color: #00796B;
+}
+
+.participants-data > table {
+    margin: 0em 1em 1em 0em;
+    display: inline-table;
+    border-collapse: collapse;
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+
+}
+
+.participants-data > table caption {
+    background: #00796B;
+    border: 1px solid #00796B;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.participants-data > table thead {
+    background: #00796B;
+    border: 1px solid #00796B;
+}
+
+.participants-data > table th {
+    font-weight: normal;
+    font-size: 1em;
+    color: #fff;
+}
+
+.participants-data > table th, td {
+    padding: 0.5em 0.8em 0.5em 0.95em;
+    border: 1px solid #00796B;
+    text-align: center;
+}
+
+.numeric-classification-data {
+    padding-top: 0.2em;
+}
+
+.numeric-classification-data > span {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 40px;
+    margin-bottom: 8px;
+
+    color: #00796B;
+}
+
+.numeric-classification-data > table {
+    margin: 0em 1em 1em 0em;
+    display: inline-table;
+    border-collapse: collapse;
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+
+}
+
+.numeric-classification-data > table caption {
+    background: #00796B;
+    border: 1px solid #00796B;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.numeric-classification-data > table thead {
+    background: #00796B;
+    border: 1px solid #00796B;
+}
+
+.numeric-classification-data > table th {
+    font-weight: normal;
+    font-size: 1em;
+    color: #fff;
+}
+
+.numeric-classification-data > table th, td {
+    padding: 0.5em 0.8em 0.5em 0.95em;
+    border: 1px solid #00796B;
+    text-align: center;
+}
+
+.user-help-downloads {
+    padding: 1em 0em 0em 4em;
+    font-size: 16px;
+}
+
+.user-help-downloads > a {
+    color: #00796B;
+    font-style: italic;
+}
+
+.dbscan-results {
+    padding-top: 2em;
+}
+
+.dbscan-results > span {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 40px;
+    margin-bottom: 8px;
+
+    color: #00796B;
+}
+
+.dbscan-results > table {
+    margin: 0em 1em 1em 0em;
+    display: inline-table;
+    border-collapse: collapse;
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+
+}
+
+.dbscan-results > table caption {
+    background: #00796B;
+    border: 1px solid #00796B;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.dbscan-results > table thead {
+    background: #00796B;
+    border: 1px solid #00796B;
+}
+
+.dbscan-results > table th {
+    font-weight: normal;
+    font-size: 1em;
+    color: #fff;
+}
+
+.dbscan-results > table th, td {
+    padding: 0.5em 0.8em 0.5em 0.95em;
+    border: 1px solid #00796B;
+    text-align: center;
+}

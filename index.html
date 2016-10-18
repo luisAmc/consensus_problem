@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>K-means</title>
+
+	<link rel="stylesheet" href="styles/mainStyle.css">
+
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/papaparse.min.js"></script>
+
+    <script type="text/javascript" src="js/euclideanDistance.js"></script>
+    <script type="text/javascript" src="js/manhattanDistance.js"></script>
+    <script type="text/javascript" src="js/minkowskiDistance.js"></script>
+	<script type="text/javascript" src="js/bhattacharayyaDistance.js"></script>
+    <script type="text/javascript" src="js/kullbackLeiberDistance.js"></script>
+    <script type="text/javascript" src="js/kMeans.js"></script>
+		<script type="text/javascript" src="js/dbScan.js"></script>
+		<script type="text/javascript" src="js/kendall'sW.js"></script>
+    <script type="text/javascript" src="js/methodsButler.js"></script>
+	<script type="text/javascript" src="js/inputsHandler.js"></script>
+</head>
+<body>
+	<header>
+        <h2>Jueces ruidosos</h2>
+    </header>
+
+    <div class="input-configuration">
+        <div class="input-file-container">
+            <input type="file" id="csv-input-file" name="input-file" class="input-file"/>
+            <label class="input-file-button" for="csv-input-file">Escoja un archivo</label>
+
+            <span id="file-name">No se ha encontrado ningún archivo</span>
+        </div>
+        <div class="method-configuration-container">
+            <div class="clusters-quantity">
+                <label>Cantidad de clusters:</label>
+                <input id="clusters-quantity" type="number" min="1" max="15" value="2"/>
+            </div>
+            <div class="method-selector">
+                <label>Método de distancia:</label>
+                <select id="method-selected">
+                    <option value="0">Euclidean</option>
+                    <option value="1">Manhattan</option>
+                    <option value="2">Minkowski</option>
+                    <!-- <option value="3">Bhattacharyya</option> -->
+                    <option value="4">Kullback-Leiber</option>
+                </select>
+            </div>
+            <div class="iterations-quantity">
+                <label>Cantidad de iteraciones:</label>
+                <input id="times" type="number" min="1" max="10000" value="100"/>
+            </div>
+            <div class="shuffle-participants">
+                <input type="checkbox" id="shuffle-checkbox" value="1">
+                <span>Mezclar los participantes</span>
+            </div>
+        </div>
+    </div>
+    <div class="user-help-downloads">
+        <a  href="data/archivo-de-ejemplo.txt"
+            download="data/archivo-de-ejemplo.txt">
+            Ejemplo de archivo
+        </a>
+    </div>
+    <hr style="margin-top: 2em;">
+    <div class="main-content">
+			<div class="methods-data">
+				<div class="file-data data-table" id="file-data"></div>
+				<div class="result-data">
+					<div class="kmeans-results data-table result-table" id="kmeans-results"></div>
+					<div class="dbscan-results data-table result-table" id="dbscan-results"></div>
+				</div>
+				<div class="kendalls-result data-table result-table" id="kendalls-result"></div>
+
+				<div class="file-without-noise data-table" id="file-without-noise"></div>
+			</div>
+
+			<div class="methods-data-modifications">
+				<div class="numeric-classification-data data-table other-table" id="numeric-classification-data"></div>
+				<div class="participants-data data-table other-table" id="participants-data"></div>
+			</div>
+		</div>
+</body>
+</html>

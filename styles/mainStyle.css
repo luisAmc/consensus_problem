@@ -1,0 +1,167 @@
+body {
+  font-family: "RobotoDraft", "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #fafafa;
+  color: #212121;
+}
+
+/*main header styles*/
+header {
+  background: #00796B;
+  border: 1px solid #00796B;
+  margin: 0 auto;
+  color: #fff;
+}
+
+header > h2 {
+  padding-left: 2em;
+  text-align: left;
+  font-size: 2.2em;
+  font-weight: 400;
+}
+
+/*input configuration styles*/
+.input-configuration {
+  padding: 2em 4em 2em 4em;
+}
+
+.input-file-container, .method-configuration-container, .input-file-container {
+  padding-bottom: 1em;
+}
+
+.input-file-container > span {
+  vertical-align: top;
+  font-size: 0.8em;
+  text-align: center;
+  display: inline-block;
+  padding: 0.8em 1em 1em 1em;
+}
+
+.clusters-quantity, .iterations-quantity, .method-selector, .shuffle-participants {
+    font-size: 1em;
+    float: left;
+    vertical-align: top;
+    padding: 0.5em 2em 0.5em 0em;
+}
+
+/*input file button style*/
+.input-file {
+    width: 0.1em;
+    height: 0.1em;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.input-file + label {
+    vertical-align: top;
+    font-size: 1em;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #fafafa;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: 0.08em solid #00796B;
+    text-decoration: none;
+    transition: all .6s;
+    min-width: 100px;
+}
+
+.input-file + label:hover {
+    background: #00796B;
+    color: #fafafa;
+}
+
+/*download links style*/
+.user-help-downloads {
+    padding: 1em 0em 0em 4em;
+    font-size: 16px;
+}
+
+.user-help-downloads > a {
+    color: #00796B;
+    font-style: italic;
+}
+
+/*main content style*/
+.main-content {
+  padding: 2em 4em 2em 4em;
+}
+
+.data-table > span {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 40px;
+    margin-bottom: 8px;
+
+    color: #00796B;
+}
+
+.data-table > table {
+  margin: 0em 1em 1em 0em;
+  display: inline-table;
+  border-collapse: collapse;
+  border: none;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+
+.data-table > table caption {
+    background: #00796B;
+    border: 1px solid #00796B;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.data-table > table thead {
+    background: #00796B;
+    border: 1px solid #00796B;
+}
+
+.data-table > table th {
+    font-weight: normal;
+    font-size: 1em;
+    color: #fff;
+}
+
+.methods-data > .file-data {
+  float: left;
+  padding-right: 3em;
+}
+
+.data-table > table th, td {
+  padding: 0.5em 0.8em 0.5em 0.95em;
+  border: 1px solid #00796B;
+  text-align: center;
+}
+
+.result-data > .result-table {
+  display: inline-table;
+  padding-right: 2em;
+}
+
+.methods-data-modifications {
+  padding-top: 3em;
+  /*display: none;*/
+}
+
+.kendalls-result {
+  padding-top: 1em;
+}
+
+.file-without-noise {
+  padding-top: 2em;
+}
+
+.file-without-noise > table {
+  /*margin-top: 2em;*/
+}
+
+.file-without-noise > a {
+    color: #00796B;
+    font-style: italic;
+    cursor: pointer;
+}
