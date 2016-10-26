@@ -126,7 +126,7 @@ KMeans.prototype.calculateMinkowskiDistance = function(vector, exp_value) {
 		for (var d = 0; d < vector.length; d++)
 			sum += Math.pow(Math.abs(vector[d] - mean[d]), exp_value);
 
-		ret_val[i] = sum;
+		ret_val[i] = Math.pow(summ, (1 / exp_value));
 		sum = 0;
 	}
 	return ret_val;
